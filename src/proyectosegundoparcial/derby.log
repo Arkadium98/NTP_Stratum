@@ -1,0 +1,1566 @@
+Fri Feb 15 09:39:09 CST 2019 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 11:19:24 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 11:19:30 CDT 2022 : Número de conexión: 1.
+Wed Apr 06 11:19:30 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed Apr 06 11:19:30 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {1}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+Wed Apr 06 11:20:22 CDT 2022 : No se ha podido recibir en el puerto 1527 en el host 0.0.0.0:
+ java.net.BindException: Address already in use: bind
+Wed Apr 06 11:20:27 CDT 2022 : No se ha podido recibir en el puerto 1527 en el host 0.0.0.0:
+ java.net.BindException: Address already in use: bind
+Wed Apr 06 11:22:07 CDT 2022 : Número de conexión: 2.
+Wed Apr 06 11:22:07 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed Apr 06 11:22:07 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {2}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+Wed Apr 06 11:22:07 CDT 2022 : Número de conexión: 3.
+Wed Apr 06 11:22:07 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed Apr 06 11:22:07 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {3}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+Wed Apr 06 11:22:39 CDT 2022 : Número de conexión: 4.
+Wed Apr 06 11:22:39 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed Apr 06 11:22:39 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {4}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+Wed Apr 06 11:22:39 CDT 2022 : Número de conexión: 5.
+Wed Apr 06 11:22:39 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed Apr 06 11:22:39 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {5}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+Wed Apr 06 11:22:55 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 11:22:59 CDT 2022 : Número de conexión: 1.
+----------------------------------------------------------------
+Wed Apr 06 11:22:59 CDT 2022:
+ Iniciando instancia a816c00e-017f-ffaf-a47e-00001c516bca de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos D:\UP\Codigo Abierto\Derby_UP\PrimeraDB con el cargador de clases jdk.internal.loader.ClassLoaders$AppClassLoader@659e0bfd
+Cargado desde file:/D:/UP/Codigo%20Abierto/Derby_UP/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.2+7-67
+user.dir=D:\UP\Codigo Abierto\Derby_UP
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\UP\Codigo Abierto\Derby_UP
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Wed Apr 06 11:23:07 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {1}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:07 CDT 2022 : Número de conexión: 2.
+Wed Apr 06 11:23:07 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {2}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:26 CDT 2022 : Número de conexión: 3.
+Wed Apr 06 11:23:26 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {3}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:26 CDT 2022 : Número de conexión: 4.
+Wed Apr 06 11:23:26 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {4}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:31 CDT 2022 : Número de conexión: 5.
+Wed Apr 06 11:23:31 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {5}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:31 CDT 2022 : Número de conexión: 6.
+Wed Apr 06 11:23:31 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {6}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:36 CDT 2022 : Número de conexión: 7.
+Wed Apr 06 11:23:36 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {7}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:36 CDT 2022 : Número de conexión: 8.
+Wed Apr 06 11:23:36 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {8}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:36 CDT 2022 : Número de conexión: 9.
+Wed Apr 06 11:23:36 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {9}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:46 CDT 2022 : Número de conexión: 10.
+Wed Apr 06 11:23:46 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {10}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:47 CDT 2022 : Número de conexión: 11.
+Wed Apr 06 11:23:47 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {11}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:47 CDT 2022 : Número de conexión: 12.
+Wed Apr 06 11:23:47 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {12}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:52 CDT 2022 : Número de conexión: 13.
+Wed Apr 06 11:23:52 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {13}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:52 CDT 2022 : Número de conexión: 14.
+Wed Apr 06 11:23:52 CDT 2022 Thread[DRDAConnThread_15,5,main] (DATABASE = PrimeraDB), (DRDAID = {14}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:57 CDT 2022 : Número de conexión: 15.
+Wed Apr 06 11:23:57 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {15}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:58 CDT 2022 : Número de conexión: 16.
+Wed Apr 06 11:23:58 CDT 2022 Thread[DRDAConnThread_17,5,main] (DATABASE = PrimeraDB), (DRDAID = {16}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:58 CDT 2022 : Número de conexión: 17.
+Wed Apr 06 11:23:58 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {17}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:58 CDT 2022 : Número de conexión: 18.
+Wed Apr 06 11:23:58 CDT 2022 Thread[DRDAConnThread_19,5,main] (DATABASE = PrimeraDB), (DRDAID = {18}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:58 CDT 2022 : Número de conexión: 19.
+Wed Apr 06 11:23:58 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {19}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:59 CDT 2022 : Número de conexión: 20.
+Wed Apr 06 11:23:59 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {20}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:23:59 CDT 2022 : Número de conexión: 21.
+Wed Apr 06 11:23:59 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {21}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:00 CDT 2022 : Número de conexión: 22.
+Wed Apr 06 11:24:00 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {22}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:16 CDT 2022 : Número de conexión: 23.
+Wed Apr 06 11:24:16 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {23}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:16 CDT 2022 : Número de conexión: 24.
+Wed Apr 06 11:24:16 CDT 2022 Thread[DRDAConnThread_25,5,main] (DATABASE = PrimeraDB), (DRDAID = {24}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:16 CDT 2022 : Número de conexión: 25.
+Wed Apr 06 11:24:16 CDT 2022 Thread[DRDAConnThread_26,5,main] (DATABASE = PrimeraDB), (DRDAID = {25}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:16 CDT 2022 : Número de conexión: 26.
+Wed Apr 06 11:24:16 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {26}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:17 CDT 2022 : Número de conexión: 27.
+Wed Apr 06 11:24:17 CDT 2022 Thread[DRDAConnThread_28,5,main] (DATABASE = PrimeraDB), (DRDAID = {27}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:18 CDT 2022 : Número de conexión: 28.
+Wed Apr 06 11:24:18 CDT 2022 Thread[DRDAConnThread_29,5,main] (DATABASE = PrimeraDB), (DRDAID = {28}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:18 CDT 2022 : Número de conexión: 29.
+Wed Apr 06 11:24:18 CDT 2022 Thread[DRDAConnThread_30,5,main] (DATABASE = PrimeraDB), (DRDAID = {29}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:18 CDT 2022 : Número de conexión: 30.
+Wed Apr 06 11:24:18 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {30}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:19 CDT 2022 : Número de conexión: 31.
+Wed Apr 06 11:24:19 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {31}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:20 CDT 2022 : Número de conexión: 32.
+Wed Apr 06 11:24:20 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {32}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:21 CDT 2022 : Número de conexión: 33.
+Wed Apr 06 11:24:21 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {33}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:21 CDT 2022 : Número de conexión: 34.
+Wed Apr 06 11:24:21 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {34}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:26 CDT 2022 : Número de conexión: 35.
+Wed Apr 06 11:24:26 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {35}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:31 CDT 2022 : Número de conexión: 36.
+Wed Apr 06 11:24:31 CDT 2022 Thread[DRDAConnThread_37,5,main] (DATABASE = PrimeraDB), (DRDAID = {36}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:31 CDT 2022 : Número de conexión: 37.
+Wed Apr 06 11:24:31 CDT 2022 Thread[DRDAConnThread_38,5,main] (DATABASE = PrimeraDB), (DRDAID = {37}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:24:31 CDT 2022 : Número de conexión: 38.
+Wed Apr 06 11:24:31 CDT 2022 Thread[DRDAConnThread_39,5,main] (DATABASE = PrimeraDB), (DRDAID = {38}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:50:44 CDT 2022 : Número de conexión: 39.
+Wed Apr 06 11:50:44 CDT 2022 Thread[DRDAConnThread_19,5,main] (DATABASE = PrimeraDB), (DRDAID = {39}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:50:44 CDT 2022 : Número de conexión: 40.
+Wed Apr 06 11:50:44 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {40}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:03 CDT 2022 : Número de conexión: 41.
+Wed Apr 06 11:51:03 CDT 2022 Thread[DRDAConnThread_15,5,main] (DATABASE = PrimeraDB), (DRDAID = {41}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:03 CDT 2022 : Número de conexión: 42.
+Wed Apr 06 11:51:03 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {42}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:04 CDT 2022 : Número de conexión: 43.
+Wed Apr 06 11:51:04 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {43}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:04 CDT 2022 : Número de conexión: 44.
+Wed Apr 06 11:51:04 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {44}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:08 CDT 2022 : Número de conexión: 45.
+Wed Apr 06 11:51:08 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {45}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:09 CDT 2022 : Número de conexión: 46.
+Wed Apr 06 11:51:09 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {46}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:09 CDT 2022 : Número de conexión: 47.
+Wed Apr 06 11:51:09 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {47}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:19 CDT 2022 : Número de conexión: 48.
+Wed Apr 06 11:51:19 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {48}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:19 CDT 2022 : Número de conexión: 49.
+Wed Apr 06 11:51:19 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {49}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:19 CDT 2022 : Número de conexión: 50.
+Wed Apr 06 11:51:19 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {50}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:19 CDT 2022 : Número de conexión: 51.
+Wed Apr 06 11:51:19 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {51}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:20 CDT 2022 : Número de conexión: 52.
+Wed Apr 06 11:51:20 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {52}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:25 CDT 2022 : Número de conexión: 53.
+Wed Apr 06 11:51:25 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {53}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:25 CDT 2022 : Número de conexión: 54.
+Wed Apr 06 11:51:25 CDT 2022 Thread[DRDAConnThread_17,5,main] (DATABASE = PrimeraDB), (DRDAID = {54}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:25 CDT 2022 : Número de conexión: 55.
+Wed Apr 06 11:51:25 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {55}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:25 CDT 2022 : Número de conexión: 56.
+Wed Apr 06 11:51:25 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {56}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:26 CDT 2022 : Número de conexión: 57.
+Wed Apr 06 11:51:26 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {57}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:26 CDT 2022 : Número de conexión: 58.
+Wed Apr 06 11:51:26 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {58}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:26 CDT 2022 : Número de conexión: 59.
+Wed Apr 06 11:51:26 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {59}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:27 CDT 2022 : Número de conexión: 60.
+Wed Apr 06 11:51:27 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {60}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:37 CDT 2022 : Número de conexión: 61.
+Wed Apr 06 11:51:37 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {61}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:47 CDT 2022 : Número de conexión: 62.
+Wed Apr 06 11:51:47 CDT 2022 Thread[DRDAConnThread_25,5,main] (DATABASE = PrimeraDB), (DRDAID = {62}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:48 CDT 2022 : Número de conexión: 63.
+Wed Apr 06 11:51:48 CDT 2022 Thread[DRDAConnThread_26,5,main] (DATABASE = PrimeraDB), (DRDAID = {63}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:48 CDT 2022 : Número de conexión: 64.
+Wed Apr 06 11:51:48 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {64}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:48 CDT 2022 : Número de conexión: 65.
+Wed Apr 06 11:51:48 CDT 2022 Thread[DRDAConnThread_28,5,main] (DATABASE = PrimeraDB), (DRDAID = {65}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:48 CDT 2022 : Número de conexión: 66.
+Wed Apr 06 11:51:48 CDT 2022 Thread[DRDAConnThread_29,5,main] (DATABASE = PrimeraDB), (DRDAID = {66}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:49 CDT 2022 : Número de conexión: 67.
+Wed Apr 06 11:51:49 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {67}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:49 CDT 2022 : Número de conexión: 68.
+Wed Apr 06 11:51:49 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {68}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:49 CDT 2022 : Número de conexión: 69.
+Wed Apr 06 11:51:49 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {69}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:49 CDT 2022 : Número de conexión: 70.
+Wed Apr 06 11:51:49 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {70}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:50 CDT 2022 : Número de conexión: 71.
+Wed Apr 06 11:51:50 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {71}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:55 CDT 2022 : Número de conexión: 72.
+Wed Apr 06 11:51:55 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {72}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:59 CDT 2022 : Número de conexión: 73.
+Wed Apr 06 11:51:59 CDT 2022 Thread[DRDAConnThread_30,5,main] (DATABASE = PrimeraDB), (DRDAID = {73}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:51:59 CDT 2022 : Número de conexión: 74.
+Wed Apr 06 11:51:59 CDT 2022 Thread[DRDAConnThread_37,5,main] (DATABASE = PrimeraDB), (DRDAID = {74}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 11:52:00 CDT 2022 : Número de conexión: 75.
+Wed Apr 06 11:52:00 CDT 2022 Thread[DRDAConnThread_38,5,main] (DATABASE = PrimeraDB), (DRDAID = {75}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 12:58:15 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 13:16:36 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 13:18:42 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 13:18:47 CDT 2022 : Número de conexión: 1.
+----------------------------------------------------------------
+Wed Apr 06 13:18:47 CDT 2022:
+ Iniciando instancia a816c00e-0180-0019-a697-0000000f8b88 de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB con el cargador de clases jdk.internal.loader.ClassLoaders$AppClassLoader@659e0bfd
+Cargado desde file:/D:/UP/Codigo%20Abierto/Proyecto_Segundo_Parcial/ProyectoSegundoParcial/ProyectoSegundoParcial/src/proyectosegundoparcial/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.2+7-67
+user.dir=D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Wed Apr 06 13:18:48 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {1}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:18:48 CDT 2022 : Número de conexión: 2.
+Wed Apr 06 13:18:48 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {2}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:08 CDT 2022 : Número de conexión: 3.
+Wed Apr 06 13:19:08 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {3}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:08 CDT 2022 : Número de conexión: 4.
+Wed Apr 06 13:19:08 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {4}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:12 CDT 2022 : Número de conexión: 5.
+Wed Apr 06 13:19:12 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {5}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:12 CDT 2022 : Número de conexión: 6.
+Wed Apr 06 13:19:12 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {6}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:17 CDT 2022 : Número de conexión: 7.
+Wed Apr 06 13:19:17 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {7}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:17 CDT 2022 : Número de conexión: 8.
+Wed Apr 06 13:19:17 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {8}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:19:17 CDT 2022 : Número de conexión: 9.
+Wed Apr 06 13:19:17 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {9}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:01 CDT 2022 : Número de conexión: 10.
+Wed Apr 06 13:37:01 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {10}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:01 CDT 2022 : Número de conexión: 11.
+Wed Apr 06 13:37:01 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {11}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:20 CDT 2022 : Número de conexión: 12.
+Wed Apr 06 13:37:20 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {12}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:20 CDT 2022 : Número de conexión: 13.
+Wed Apr 06 13:37:20 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {13}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:21 CDT 2022 : Número de conexión: 14.
+Wed Apr 06 13:37:21 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {14}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:21 CDT 2022 : Número de conexión: 15.
+Wed Apr 06 13:37:21 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {15}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:25 CDT 2022 : Número de conexión: 16.
+Wed Apr 06 13:37:25 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {16}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:25 CDT 2022 : Número de conexión: 17.
+Wed Apr 06 13:37:25 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {17}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:25 CDT 2022 : Número de conexión: 18.
+Wed Apr 06 13:37:25 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {18}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:36 CDT 2022 : Número de conexión: 19.
+Wed Apr 06 13:37:36 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {19}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:36 CDT 2022 : Número de conexión: 20.
+Wed Apr 06 13:37:36 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {20}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:36 CDT 2022 : Número de conexión: 21.
+Wed Apr 06 13:37:36 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {21}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:36 CDT 2022 : Número de conexión: 22.
+Wed Apr 06 13:37:36 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {22}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:37 CDT 2022 : Número de conexión: 23.
+Wed Apr 06 13:37:37 CDT 2022 Thread[DRDAConnThread_15,5,main] (DATABASE = PrimeraDB), (DRDAID = {23}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:42 CDT 2022 : Número de conexión: 24.
+Wed Apr 06 13:37:42 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {24}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:42 CDT 2022 : Número de conexión: 25.
+Wed Apr 06 13:37:42 CDT 2022 Thread[DRDAConnThread_17,5,main] (DATABASE = PrimeraDB), (DRDAID = {25}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:42 CDT 2022 : Número de conexión: 26.
+Wed Apr 06 13:37:42 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {26}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:42 CDT 2022 : Número de conexión: 27.
+Wed Apr 06 13:37:42 CDT 2022 Thread[DRDAConnThread_19,5,main] (DATABASE = PrimeraDB), (DRDAID = {27}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:42 CDT 2022 : Número de conexión: 28.
+Wed Apr 06 13:37:42 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {28}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:43 CDT 2022 : Número de conexión: 29.
+Wed Apr 06 13:37:43 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {29}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:43 CDT 2022 : Número de conexión: 30.
+Wed Apr 06 13:37:43 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {30}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:43 CDT 2022 : Número de conexión: 31.
+Wed Apr 06 13:37:43 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {31}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:37:54 CDT 2022 : Número de conexión: 32.
+Wed Apr 06 13:37:54 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {32}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:04 CDT 2022 : Número de conexión: 33.
+Wed Apr 06 13:38:04 CDT 2022 Thread[DRDAConnThread_25,5,main] (DATABASE = PrimeraDB), (DRDAID = {33}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:04 CDT 2022 : Número de conexión: 34.
+Wed Apr 06 13:38:04 CDT 2022 Thread[DRDAConnThread_26,5,main] (DATABASE = PrimeraDB), (DRDAID = {34}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:05 CDT 2022 : Número de conexión: 35.
+Wed Apr 06 13:38:05 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {35}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:05 CDT 2022 : Número de conexión: 36.
+Wed Apr 06 13:38:05 CDT 2022 Thread[DRDAConnThread_28,5,main] (DATABASE = PrimeraDB), (DRDAID = {36}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:05 CDT 2022 : Número de conexión: 37.
+Wed Apr 06 13:38:05 CDT 2022 Thread[DRDAConnThread_29,5,main] (DATABASE = PrimeraDB), (DRDAID = {37}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:05 CDT 2022 : Número de conexión: 38.
+Wed Apr 06 13:38:05 CDT 2022 Thread[DRDAConnThread_30,5,main] (DATABASE = PrimeraDB), (DRDAID = {38}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:06 CDT 2022 : Número de conexión: 39.
+Wed Apr 06 13:38:06 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {39}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:06 CDT 2022 : Número de conexión: 40.
+Wed Apr 06 13:38:06 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {40}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:17 CDT 2022 : Número de conexión: 41.
+Wed Apr 06 13:38:17 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {41}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:21 CDT 2022 : Número de conexión: 42.
+Wed Apr 06 13:38:21 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {42}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:38:26 CDT 2022 : Número de conexión: 43.
+Wed Apr 06 13:38:26 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {43}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:47:56 CDT 2022 : Número de conexión: 44.
+Wed Apr 06 13:47:56 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {44}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:47:57 CDT 2022 : Número de conexión: 45.
+Wed Apr 06 13:47:57 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {45}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:16 CDT 2022 : Número de conexión: 46.
+Wed Apr 06 13:48:16 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {46}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:16 CDT 2022 : Número de conexión: 47.
+Wed Apr 06 13:48:16 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {47}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:20 CDT 2022 : Número de conexión: 48.
+Wed Apr 06 13:48:20 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {48}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:21 CDT 2022 : Número de conexión: 49.
+Wed Apr 06 13:48:21 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {49}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:25 CDT 2022 : Número de conexión: 50.
+Wed Apr 06 13:48:25 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {50}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:25 CDT 2022 : Número de conexión: 51.
+Wed Apr 06 13:48:25 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {51}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:25 CDT 2022 : Número de conexión: 52.
+Wed Apr 06 13:48:25 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {52}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:36 CDT 2022 : Número de conexión: 53.
+Wed Apr 06 13:48:36 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {53}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:36 CDT 2022 : Número de conexión: 54.
+Wed Apr 06 13:48:36 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {54}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:36 CDT 2022 : Número de conexión: 55.
+Wed Apr 06 13:48:36 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {55}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:36 CDT 2022 : Número de conexión: 56.
+Wed Apr 06 13:48:36 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {56}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:36 CDT 2022 : Número de conexión: 57.
+Wed Apr 06 13:48:36 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {57}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:41 CDT 2022 : Número de conexión: 58.
+Wed Apr 06 13:48:41 CDT 2022 Thread[DRDAConnThread_17,5,main] (DATABASE = PrimeraDB), (DRDAID = {58}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:42 CDT 2022 : Número de conexión: 59.
+Wed Apr 06 13:48:42 CDT 2022 Thread[DRDAConnThread_15,5,main] (DATABASE = PrimeraDB), (DRDAID = {59}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:42 CDT 2022 : Número de conexión: 60.
+Wed Apr 06 13:48:42 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {60}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:42 CDT 2022 : Número de conexión: 61.
+Wed Apr 06 13:48:42 CDT 2022 Thread[DRDAConnThread_19,5,main] (DATABASE = PrimeraDB), (DRDAID = {61}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:42 CDT 2022 : Número de conexión: 62.
+Wed Apr 06 13:48:42 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {62}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:43 CDT 2022 : Número de conexión: 63.
+Wed Apr 06 13:48:43 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {63}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:43 CDT 2022 : Número de conexión: 64.
+Wed Apr 06 13:48:43 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {64}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:43 CDT 2022 : Número de conexión: 65.
+Wed Apr 06 13:48:43 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {65}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:58 CDT 2022 : Número de conexión: 66.
+Wed Apr 06 13:48:58 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {66}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:58 CDT 2022 : Número de conexión: 67.
+Wed Apr 06 13:48:58 CDT 2022 Thread[DRDAConnThread_26,5,main] (DATABASE = PrimeraDB), (DRDAID = {67}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:58 CDT 2022 : Número de conexión: 68.
+Wed Apr 06 13:48:58 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {68}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:59 CDT 2022 : Número de conexión: 69.
+Wed Apr 06 13:48:59 CDT 2022 Thread[DRDAConnThread_25,5,main] (DATABASE = PrimeraDB), (DRDAID = {69}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:59 CDT 2022 : Número de conexión: 70.
+Wed Apr 06 13:48:59 CDT 2022 Thread[DRDAConnThread_28,5,main] (DATABASE = PrimeraDB), (DRDAID = {70}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:59 CDT 2022 : Número de conexión: 71.
+Wed Apr 06 13:48:59 CDT 2022 Thread[DRDAConnThread_29,5,main] (DATABASE = PrimeraDB), (DRDAID = {71}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:59 CDT 2022 : Número de conexión: 72.
+Wed Apr 06 13:48:59 CDT 2022 Thread[DRDAConnThread_30,5,main] (DATABASE = PrimeraDB), (DRDAID = {72}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:48:59 CDT 2022 : Número de conexión: 73.
+Wed Apr 06 13:48:59 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {73}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:00 CDT 2022 : Número de conexión: 74.
+Wed Apr 06 13:49:00 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {74}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:00 CDT 2022 : Número de conexión: 75.
+Wed Apr 06 13:49:00 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {75}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:10 CDT 2022 : Número de conexión: 76.
+Wed Apr 06 13:49:10 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {76}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:15 CDT 2022 : Número de conexión: 77.
+Wed Apr 06 13:49:15 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {77}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:20 CDT 2022 : Número de conexión: 78.
+Wed Apr 06 13:49:20 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {78}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:20 CDT 2022 : Número de conexión: 79.
+Wed Apr 06 13:49:20 CDT 2022 Thread[DRDAConnThread_37,5,main] (DATABASE = PrimeraDB), (DRDAID = {79}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:49:20 CDT 2022 : Número de conexión: 80.
+Wed Apr 06 13:49:20 CDT 2022 Thread[DRDAConnThread_38,5,main] (DATABASE = PrimeraDB), (DRDAID = {80}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:52:55 CDT 2022 : Número de conexión: 81.
+Wed Apr 06 13:52:55 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {81}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:52:55 CDT 2022 : Número de conexión: 82.
+Wed Apr 06 13:52:55 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {82}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:52:55 CDT 2022 : Número de conexión: 83.
+Wed Apr 06 13:52:55 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {83}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:52:55 CDT 2022 : Número de conexión: 84.
+Wed Apr 06 13:52:55 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {84}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:10 CDT 2022 : Número de conexión: 85.
+Wed Apr 06 13:53:10 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {85}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:10 CDT 2022 : Número de conexión: 86.
+Wed Apr 06 13:53:10 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {86}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:30 CDT 2022 : Número de conexión: 87.
+Wed Apr 06 13:53:30 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {87}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:30 CDT 2022 : Número de conexión: 88.
+Wed Apr 06 13:53:30 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {88}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:34 CDT 2022 : Número de conexión: 89.
+Wed Apr 06 13:53:34 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {89}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:34 CDT 2022 : Número de conexión: 90.
+Wed Apr 06 13:53:34 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {90}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:39 CDT 2022 : Número de conexión: 91.
+Wed Apr 06 13:53:39 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {91}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:39 CDT 2022 : Número de conexión: 92.
+Wed Apr 06 13:53:39 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {92}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:39 CDT 2022 : Número de conexión: 93.
+Wed Apr 06 13:53:39 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {93}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:49 CDT 2022 : Número de conexión: 94.
+Wed Apr 06 13:53:49 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {94}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:50 CDT 2022 : Número de conexión: 95.
+Wed Apr 06 13:53:50 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {95}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:50 CDT 2022 : Número de conexión: 96.
+Wed Apr 06 13:53:50 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {96}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:55 CDT 2022 : Número de conexión: 97.
+Wed Apr 06 13:53:55 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {97}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:53:55 CDT 2022 : Número de conexión: 98.
+Wed Apr 06 13:53:55 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {98}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:00 CDT 2022 : Número de conexión: 99.
+Wed Apr 06 13:54:00 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {99}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:00 CDT 2022 : Número de conexión: 100.
+Wed Apr 06 13:54:00 CDT 2022 Thread[DRDAConnThread_26,5,main] (DATABASE = PrimeraDB), (DRDAID = {100}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:00 CDT 2022 : Número de conexión: 101.
+Wed Apr 06 13:54:00 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {101}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:00 CDT 2022 : Número de conexión: 102.
+Wed Apr 06 13:54:00 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {102}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:00 CDT 2022 : Número de conexión: 103.
+Wed Apr 06 13:54:00 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {103}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:01 CDT 2022 : Número de conexión: 104.
+Wed Apr 06 13:54:01 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {104}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:01 CDT 2022 : Número de conexión: 105.
+Wed Apr 06 13:54:01 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {105}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:01 CDT 2022 : Número de conexión: 106.
+Wed Apr 06 13:54:01 CDT 2022 Thread[DRDAConnThread_19,5,main] (DATABASE = PrimeraDB), (DRDAID = {106}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:16 CDT 2022 : Número de conexión: 107.
+Wed Apr 06 13:54:16 CDT 2022 Thread[DRDAConnThread_15,5,main] (DATABASE = PrimeraDB), (DRDAID = {107}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:26 CDT 2022 : Número de conexión: 108.
+Wed Apr 06 13:54:26 CDT 2022 Thread[DRDAConnThread_17,5,main] (DATABASE = PrimeraDB), (DRDAID = {108}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:27 CDT 2022 : Número de conexión: 109.
+Wed Apr 06 13:54:27 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {109}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:27 CDT 2022 : Número de conexión: 110.
+Wed Apr 06 13:54:27 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {110}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:27 CDT 2022 : Número de conexión: 111.
+Wed Apr 06 13:54:27 CDT 2022 Thread[DRDAConnThread_30,5,main] (DATABASE = PrimeraDB), (DRDAID = {111}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:27 CDT 2022 : Número de conexión: 112.
+Wed Apr 06 13:54:27 CDT 2022 Thread[DRDAConnThread_28,5,main] (DATABASE = PrimeraDB), (DRDAID = {112}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:28 CDT 2022 : Número de conexión: 113.
+Wed Apr 06 13:54:28 CDT 2022 Thread[DRDAConnThread_29,5,main] (DATABASE = PrimeraDB), (DRDAID = {113}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:28 CDT 2022 : Número de conexión: 114.
+Wed Apr 06 13:54:28 CDT 2022 Thread[DRDAConnThread_25,5,main] (DATABASE = PrimeraDB), (DRDAID = {114}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:28 CDT 2022 : Número de conexión: 115.
+Wed Apr 06 13:54:28 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {115}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:28 CDT 2022 : Número de conexión: 116.
+Wed Apr 06 13:54:28 CDT 2022 Thread[DRDAConnThread_37,5,main] (DATABASE = PrimeraDB), (DRDAID = {116}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:28 CDT 2022 : Número de conexión: 117.
+Wed Apr 06 13:54:28 CDT 2022 Thread[DRDAConnThread_38,5,main] (DATABASE = PrimeraDB), (DRDAID = {117}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:33 CDT 2022 : Número de conexión: 118.
+Wed Apr 06 13:54:33 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {118}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:38 CDT 2022 : Número de conexión: 119.
+Wed Apr 06 13:54:38 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {119}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:38 CDT 2022 : Número de conexión: 120.
+Wed Apr 06 13:54:38 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {120}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:54:39 CDT 2022 : Número de conexión: 121.
+Wed Apr 06 13:54:39 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {121}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:57:21 CDT 2022 : Número de conexión: 122.
+Wed Apr 06 13:57:21 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {122}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:57:21 CDT 2022 : Número de conexión: 123.
+Wed Apr 06 13:57:21 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {123}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 13:57:21 CDT 2022 : Número de conexión: 124.
+Wed Apr 06 13:57:21 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {124}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:05:27 CDT 2022 : Número de conexión: 125.
+Wed Apr 06 14:05:27 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {125}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:05:28 CDT 2022 : Número de conexión: 126.
+Wed Apr 06 14:05:28 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {126}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:05:28 CDT 2022 : Número de conexión: 127.
+Wed Apr 06 14:05:28 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {127}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:08:10 CDT 2022 : Número de conexión: 128.
+Wed Apr 06 14:08:10 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {128}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:08:11 CDT 2022 : Número de conexión: 129.
+Wed Apr 06 14:08:11 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {129}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:08:11 CDT 2022 : Número de conexión: 130.
+Wed Apr 06 14:08:11 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {130}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:19:01 CDT 2022 : Número de conexión: 131.
+Wed Apr 06 14:19:01 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {131}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:19:01 CDT 2022 : Número de conexión: 132.
+Wed Apr 06 14:19:01 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {132}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:19:01 CDT 2022 : Número de conexión: 133.
+Wed Apr 06 14:19:01 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {133}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:31:58 CDT 2022 : Número de conexión: 134.
+Wed Apr 06 14:31:58 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {134}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:31:58 CDT 2022 : Número de conexión: 135.
+Wed Apr 06 14:31:58 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {135}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:31:58 CDT 2022 : Número de conexión: 136.
+Wed Apr 06 14:31:58 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {136}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:39:43 CDT 2022 : Número de conexión: 137.
+Wed Apr 06 14:39:43 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {137}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:39:43 CDT 2022 : Número de conexión: 138.
+Wed Apr 06 14:39:43 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {138}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:39:43 CDT 2022 : Número de conexión: 139.
+Wed Apr 06 14:39:43 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {139}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:51:28 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 14:51:31 CDT 2022 : Número de conexión: 1.
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ041: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (2) ===========
+Cleanup action completed
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {1}), No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {1}), El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+Wed Apr 06 14:51:31 CDT 2022 : Número de conexión: 2.
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ041: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (2) ===========
+Cleanup action completed
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {2}), No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+Wed Apr 06 14:51:31 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {2}), El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+Wed Apr 06 14:51:37 CDT 2022 : Número de conexión: 3.
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ041: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (2) ===========
+Cleanup action completed
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {3}), No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {3}), El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+Wed Apr 06 14:51:37 CDT 2022 : Número de conexión: 4.
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ041: No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 16 more
+============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+ERROR XBM0A: El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (2) ===========
+Cleanup action completed
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {4}), No se ha podido crear la base de datos 'PrimeraDB', consulte la excepción siguiente para obtener más información.
+Wed Apr 06 14:51:37 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {4}), El directorio de base de datos 'D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB' existe. Sin embargo, no contiene el archivo 'service.properties'. Es posible que Derby haya caído durante el proceso de creación de esta base de datos. Puede que desee suprimir este directorio e intentar volver a crear la base de datos.
+Wed Apr 06 14:52:20 CDT 2022 : Número de conexión: 5.
+----------------------------------------------------------------
+Wed Apr 06 14:52:21 CDT 2022:
+ Iniciando instancia a816c00e-0180-006e-91d9-0000000f8b88 de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB con el cargador de clases jdk.internal.loader.ClassLoaders$AppClassLoader@659e0bfd
+Cargado desde file:/D:/UP/Codigo%20Abierto/Proyecto_Segundo_Parcial/ProyectoSegundoParcial/ProyectoSegundoParcial/src/proyectosegundoparcial/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.2+7-67
+user.dir=D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Wed Apr 06 14:52:29 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {5}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:29 CDT 2022 : Número de conexión: 6.
+Wed Apr 06 14:52:29 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {6}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:38 CDT 2022 : Número de conexión: 7.
+Wed Apr 06 14:52:38 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {7}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:38 CDT 2022 : Número de conexión: 8.
+Wed Apr 06 14:52:38 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {8}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:48 CDT 2022 : Número de conexión: 9.
+Wed Apr 06 14:52:48 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {9}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:49 CDT 2022 : Número de conexión: 10.
+Wed Apr 06 14:52:49 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {10}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:53 CDT 2022 : Número de conexión: 11.
+Wed Apr 06 14:52:53 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {11}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:53 CDT 2022 : Número de conexión: 12.
+Wed Apr 06 14:52:53 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {12}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:57 CDT 2022 : Número de conexión: 13.
+Wed Apr 06 14:52:57 CDT 2022 Thread[DRDAConnThread_10,5,main] (DATABASE = PrimeraDB), (DRDAID = {13}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:57 CDT 2022 : Número de conexión: 14.
+Wed Apr 06 14:52:57 CDT 2022 Thread[DRDAConnThread_11,5,main] (DATABASE = PrimeraDB), (DRDAID = {14}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:58 CDT 2022 : Número de conexión: 15.
+Wed Apr 06 14:52:58 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {15}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:58 CDT 2022 : Número de conexión: 16.
+Wed Apr 06 14:52:58 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {16}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:52:58 CDT 2022 : Número de conexión: 17.
+Wed Apr 06 14:52:58 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {17}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:02 CDT 2022 : Número de conexión: 18.
+Wed Apr 06 14:53:02 CDT 2022 Thread[DRDAConnThread_15,5,main] (DATABASE = PrimeraDB), (DRDAID = {18}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:02 CDT 2022 : Número de conexión: 19.
+Wed Apr 06 14:53:02 CDT 2022 Thread[DRDAConnThread_16,5,main] (DATABASE = PrimeraDB), (DRDAID = {19}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:07 CDT 2022 : Número de conexión: 20.
+Wed Apr 06 14:53:07 CDT 2022 Thread[DRDAConnThread_17,5,main] (DATABASE = PrimeraDB), (DRDAID = {20}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:07 CDT 2022 : Número de conexión: 21.
+Wed Apr 06 14:53:07 CDT 2022 Thread[DRDAConnThread_18,5,main] (DATABASE = PrimeraDB), (DRDAID = {21}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:07 CDT 2022 : Número de conexión: 22.
+Wed Apr 06 14:53:07 CDT 2022 Thread[DRDAConnThread_19,5,main] (DATABASE = PrimeraDB), (DRDAID = {22}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:09 CDT 2022 : Número de conexión: 23.
+Wed Apr 06 14:53:09 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {23}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:09 CDT 2022 : Número de conexión: 24.
+Wed Apr 06 14:53:09 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {24}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:09 CDT 2022 : Número de conexión: 25.
+Wed Apr 06 14:53:09 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {25}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:09 CDT 2022 : Número de conexión: 26.
+Wed Apr 06 14:53:09 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {26}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:10 CDT 2022 : Número de conexión: 27.
+Wed Apr 06 14:53:10 CDT 2022 Thread[DRDAConnThread_24,5,main] (DATABASE = PrimeraDB), (DRDAID = {27}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:15 CDT 2022 : Número de conexión: 28.
+Wed Apr 06 14:53:15 CDT 2022 Thread[DRDAConnThread_25,5,main] (DATABASE = PrimeraDB), (DRDAID = {28}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:15 CDT 2022 : Número de conexión: 29.
+Wed Apr 06 14:53:15 CDT 2022 Thread[DRDAConnThread_26,5,main] (DATABASE = PrimeraDB), (DRDAID = {29}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:15 CDT 2022 : Número de conexión: 30.
+Wed Apr 06 14:53:15 CDT 2022 Thread[DRDAConnThread_27,5,main] (DATABASE = PrimeraDB), (DRDAID = {30}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:15 CDT 2022 : Número de conexión: 31.
+Wed Apr 06 14:53:15 CDT 2022 Thread[DRDAConnThread_28,5,main] (DATABASE = PrimeraDB), (DRDAID = {31}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:16 CDT 2022 : Número de conexión: 32.
+Wed Apr 06 14:53:16 CDT 2022 Thread[DRDAConnThread_29,5,main] (DATABASE = PrimeraDB), (DRDAID = {32}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:16 CDT 2022 : Número de conexión: 33.
+Wed Apr 06 14:53:16 CDT 2022 Thread[DRDAConnThread_30,5,main] (DATABASE = PrimeraDB), (DRDAID = {33}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:16 CDT 2022 : Número de conexión: 34.
+Wed Apr 06 14:53:16 CDT 2022 Thread[DRDAConnThread_31,5,main] (DATABASE = PrimeraDB), (DRDAID = {34}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:17 CDT 2022 : Número de conexión: 35.
+Wed Apr 06 14:53:17 CDT 2022 Thread[DRDAConnThread_32,5,main] (DATABASE = PrimeraDB), (DRDAID = {35}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:17 CDT 2022 : Número de conexión: 36.
+Wed Apr 06 14:53:17 CDT 2022 Thread[DRDAConnThread_33,5,main] (DATABASE = PrimeraDB), (DRDAID = {36}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:17 CDT 2022 : Número de conexión: 37.
+Wed Apr 06 14:53:17 CDT 2022 Thread[DRDAConnThread_34,5,main] (DATABASE = PrimeraDB), (DRDAID = {37}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:17 CDT 2022 : Número de conexión: 38.
+Wed Apr 06 14:53:17 CDT 2022 Thread[DRDAConnThread_35,5,main] (DATABASE = PrimeraDB), (DRDAID = {38}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:27 CDT 2022 : Número de conexión: 39.
+Wed Apr 06 14:53:27 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {39}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:27 CDT 2022 : Número de conexión: 40.
+Wed Apr 06 14:53:27 CDT 2022 Thread[DRDAConnThread_37,5,main] (DATABASE = PrimeraDB), (DRDAID = {40}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:32 CDT 2022 : Número de conexión: 41.
+Wed Apr 06 14:53:32 CDT 2022 Thread[DRDAConnThread_38,5,main] (DATABASE = PrimeraDB), (DRDAID = {41}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:38 CDT 2022 : Número de conexión: 42.
+Wed Apr 06 14:53:38 CDT 2022 Thread[DRDAConnThread_39,5,main] (DATABASE = PrimeraDB), (DRDAID = {42}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:38 CDT 2022 : Número de conexión: 43.
+Wed Apr 06 14:53:38 CDT 2022 Thread[DRDAConnThread_40,5,main] (DATABASE = PrimeraDB), (DRDAID = {43}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:38 CDT 2022 : Número de conexión: 44.
+Wed Apr 06 14:53:38 CDT 2022 Thread[DRDAConnThread_41,5,main] (DATABASE = PrimeraDB), (DRDAID = {44}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:39 CDT 2022 : Número de conexión: 45.
+Wed Apr 06 14:53:39 CDT 2022 Thread[DRDAConnThread_42,5,main] (DATABASE = PrimeraDB), (DRDAID = {45}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:39 CDT 2022 : Número de conexión: 46.
+Wed Apr 06 14:53:39 CDT 2022 Thread[DRDAConnThread_43,5,main] (DATABASE = PrimeraDB), (DRDAID = {46}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:39 CDT 2022 : Número de conexión: 47.
+Wed Apr 06 14:53:39 CDT 2022 Thread[DRDAConnThread_44,5,main] (DATABASE = PrimeraDB), (DRDAID = {47}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:40 CDT 2022 : Número de conexión: 48.
+Wed Apr 06 14:53:40 CDT 2022 Thread[DRDAConnThread_45,5,main] (DATABASE = PrimeraDB), (DRDAID = {48}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:40 CDT 2022 : Número de conexión: 49.
+Wed Apr 06 14:53:40 CDT 2022 Thread[DRDAConnThread_46,5,main] (DATABASE = PrimeraDB), (DRDAID = {49}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:43 CDT 2022 : Número de conexión: 50.
+Wed Apr 06 14:53:43 CDT 2022 Thread[DRDAConnThread_47,5,main] (DATABASE = PrimeraDB), (DRDAID = {50}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:43 CDT 2022 : Número de conexión: 51.
+Wed Apr 06 14:53:43 CDT 2022 Thread[DRDAConnThread_48,5,main] (DATABASE = PrimeraDB), (DRDAID = {51}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:43 CDT 2022 : Número de conexión: 52.
+Wed Apr 06 14:53:43 CDT 2022 Thread[DRDAConnThread_49,5,main] (DATABASE = PrimeraDB), (DRDAID = {52}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:44 CDT 2022 : Número de conexión: 53.
+Wed Apr 06 14:53:44 CDT 2022 Thread[DRDAConnThread_50,5,main] (DATABASE = PrimeraDB), (DRDAID = {53}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:44 CDT 2022 : Número de conexión: 54.
+Wed Apr 06 14:53:44 CDT 2022 Thread[DRDAConnThread_51,5,main] (DATABASE = PrimeraDB), (DRDAID = {54}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:45 CDT 2022 : Número de conexión: 55.
+Wed Apr 06 14:53:45 CDT 2022 Thread[DRDAConnThread_52,5,main] (DATABASE = PrimeraDB), (DRDAID = {55}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:51 CDT 2022 : Número de conexión: 56.
+Wed Apr 06 14:53:51 CDT 2022 Thread[DRDAConnThread_53,5,main] (DATABASE = PrimeraDB), (DRDAID = {56}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:55 CDT 2022 : Número de conexión: 57.
+Wed Apr 06 14:53:55 CDT 2022 Thread[DRDAConnThread_54,5,main] (DATABASE = PrimeraDB), (DRDAID = {57}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:55 CDT 2022 : Número de conexión: 58.
+Wed Apr 06 14:53:55 CDT 2022 Thread[DRDAConnThread_55,5,main] (DATABASE = PrimeraDB), (DRDAID = {58}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:55 CDT 2022 : Número de conexión: 59.
+Wed Apr 06 14:53:55 CDT 2022 Thread[DRDAConnThread_56,5,main] (DATABASE = PrimeraDB), (DRDAID = {59}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:55 CDT 2022 : Número de conexión: 60.
+Wed Apr 06 14:53:55 CDT 2022 Thread[DRDAConnThread_57,5,main] (DATABASE = PrimeraDB), (DRDAID = {60}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:55 CDT 2022 : Número de conexión: 61.
+Wed Apr 06 14:53:55 CDT 2022 Thread[DRDAConnThread_58,5,main] (DATABASE = PrimeraDB), (DRDAID = {61}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 62.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_59,5,main] (DATABASE = PrimeraDB), (DRDAID = {62}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 63.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_60,5,main] (DATABASE = PrimeraDB), (DRDAID = {63}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 64.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_61,5,main] (DATABASE = PrimeraDB), (DRDAID = {64}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 65.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_62,5,main] (DATABASE = PrimeraDB), (DRDAID = {65}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 66.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_63,5,main] (DATABASE = PrimeraDB), (DRDAID = {66}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 67.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_64,5,main] (DATABASE = PrimeraDB), (DRDAID = {67}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:56 CDT 2022 : Número de conexión: 68.
+Wed Apr 06 14:53:56 CDT 2022 Thread[DRDAConnThread_65,5,main] (DATABASE = PrimeraDB), (DRDAID = {68}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:57 CDT 2022 : Número de conexión: 69.
+Wed Apr 06 14:53:57 CDT 2022 Thread[DRDAConnThread_66,5,main] (DATABASE = PrimeraDB), (DRDAID = {69}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:57 CDT 2022 : Número de conexión: 70.
+Wed Apr 06 14:53:57 CDT 2022 Thread[DRDAConnThread_67,5,main] (DATABASE = PrimeraDB), (DRDAID = {70}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:57 CDT 2022 : Número de conexión: 71.
+Wed Apr 06 14:53:57 CDT 2022 Thread[DRDAConnThread_68,5,main] (DATABASE = PrimeraDB), (DRDAID = {71}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:53:57 CDT 2022 : Número de conexión: 72.
+Wed Apr 06 14:53:57 CDT 2022 Thread[DRDAConnThread_69,5,main] (DATABASE = PrimeraDB), (DRDAID = {72}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:02 CDT 2022 : Número de conexión: 73.
+Wed Apr 06 14:54:02 CDT 2022 Thread[DRDAConnThread_70,5,main] (DATABASE = PrimeraDB), (DRDAID = {73}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:02 CDT 2022 : Número de conexión: 74.
+Wed Apr 06 14:54:02 CDT 2022 Thread[DRDAConnThread_71,5,main] (DATABASE = PrimeraDB), (DRDAID = {74}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:02 CDT 2022 : Número de conexión: 75.
+Wed Apr 06 14:54:02 CDT 2022 Thread[DRDAConnThread_72,5,main] (DATABASE = PrimeraDB), (DRDAID = {75}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:03 CDT 2022 : Número de conexión: 76.
+Wed Apr 06 14:54:03 CDT 2022 Thread[DRDAConnThread_73,5,main] (DATABASE = PrimeraDB), (DRDAID = {76}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:28 CDT 2022 : Número de conexión: 77.
+Wed Apr 06 14:54:28 CDT 2022 Thread[DRDAConnThread_74,5,main] (DATABASE = PrimeraDB), (DRDAID = {77}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:28 CDT 2022 : Número de conexión: 78.
+Wed Apr 06 14:54:28 CDT 2022 Thread[DRDAConnThread_75,5,main] (DATABASE = PrimeraDB), (DRDAID = {78}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:47 CDT 2022 : Número de conexión: 79.
+Wed Apr 06 14:54:47 CDT 2022 Thread[DRDAConnThread_7,5,main] (DATABASE = PrimeraDB), (DRDAID = {79}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:47 CDT 2022 : Número de conexión: 80.
+Wed Apr 06 14:54:47 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {80}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:52 CDT 2022 : Número de conexión: 81.
+Wed Apr 06 14:54:52 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {81}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:52 CDT 2022 : Número de conexión: 82.
+Wed Apr 06 14:54:52 CDT 2022 Thread[DRDAConnThread_8,5,main] (DATABASE = PrimeraDB), (DRDAID = {82}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:57 CDT 2022 : Número de conexión: 83.
+Wed Apr 06 14:54:57 CDT 2022 Thread[DRDAConnThread_60,5,main] (DATABASE = PrimeraDB), (DRDAID = {83}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:57 CDT 2022 : Número de conexión: 84.
+Wed Apr 06 14:54:57 CDT 2022 Thread[DRDAConnThread_9,5,main] (DATABASE = PrimeraDB), (DRDAID = {84}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:54:57 CDT 2022 : Número de conexión: 85.
+Wed Apr 06 14:54:57 CDT 2022 Thread[DRDAConnThread_6,5,main] (DATABASE = PrimeraDB), (DRDAID = {85}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:06 CDT 2022 : Número de conexión: 86.
+Wed Apr 06 14:55:06 CDT 2022 Thread[DRDAConnThread_12,5,main] (DATABASE = PrimeraDB), (DRDAID = {86}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:06 CDT 2022 : Número de conexión: 87.
+Wed Apr 06 14:55:06 CDT 2022 Thread[DRDAConnThread_13,5,main] (DATABASE = PrimeraDB), (DRDAID = {87}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:07 CDT 2022 : Número de conexión: 88.
+Wed Apr 06 14:55:07 CDT 2022 Thread[DRDAConnThread_20,5,main] (DATABASE = PrimeraDB), (DRDAID = {88}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:07 CDT 2022 : Número de conexión: 89.
+Wed Apr 06 14:55:07 CDT 2022 Thread[DRDAConnThread_14,5,main] (DATABASE = PrimeraDB), (DRDAID = {89}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:07 CDT 2022 : Número de conexión: 90.
+Wed Apr 06 14:55:07 CDT 2022 Thread[DRDAConnThread_36,5,main] (DATABASE = PrimeraDB), (DRDAID = {90}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:07 CDT 2022 : Número de conexión: 91.
+Wed Apr 06 14:55:07 CDT 2022 Thread[DRDAConnThread_21,5,main] (DATABASE = PrimeraDB), (DRDAID = {91}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:08 CDT 2022 : Número de conexión: 92.
+Wed Apr 06 14:55:08 CDT 2022 Thread[DRDAConnThread_22,5,main] (DATABASE = PrimeraDB), (DRDAID = {92}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 14:55:12 CDT 2022 : Número de conexión: 93.
+Wed Apr 06 14:55:12 CDT 2022 Thread[DRDAConnThread_23,5,main] (DATABASE = PrimeraDB), (DRDAID = {93}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 15:16:47 CDT 2022 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
+Wed Apr 06 15:16:51 CDT 2022 : Número de conexión: 1.
+----------------------------------------------------------------
+Wed Apr 06 15:16:51 CDT 2022:
+ Iniciando instancia a816c00e-0180-0085-c002-0000000f8b88 de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial\PrimeraDB con el cargador de clases jdk.internal.loader.ClassLoaders$AppClassLoader@659e0bfd
+Cargado desde file:/D:/UP/Codigo%20Abierto/Proyecto_Segundo_Parcial/ProyectoSegundoParcial/ProyectoSegundoParcial/src/proyectosegundoparcial/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.2+7-67
+user.dir=D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\UP\Codigo Abierto\Proyecto_Segundo_Parcial\ProyectoSegundoParcial\ProyectoSegundoParcial\src\proyectosegundoparcial
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Wed Apr 06 15:16:52 CDT 2022 Thread[DRDAConnThread_2,5,main] (DATABASE = PrimeraDB), (DRDAID = {1}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 15:16:52 CDT 2022 : Número de conexión: 2.
+Wed Apr 06 15:16:52 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {2}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 15:16:52 CDT 2022 : Número de conexión: 3.
+Wed Apr 06 15:16:52 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {3}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 15:16:52 CDT 2022 : Número de conexión: 4.
+Wed Apr 06 15:16:52 CDT 2022 Thread[DRDAConnThread_5,5,main] (DATABASE = PrimeraDB), (DRDAID = {4}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 15:18:34 CDT 2022 : Número de conexión: 5.
+Wed Apr 06 15:18:34 CDT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = PrimeraDB), (DRDAID = {5}), Apache Derby Network Server connected to database PrimeraDB;create=true
+Wed Apr 06 15:18:34 CDT 2022 : Número de conexión: 6.
+Wed Apr 06 15:18:34 CDT 2022 Thread[DRDAConnThread_4,5,main] (DATABASE = PrimeraDB), (DRDAID = {6}), Apache Derby Network Server connected to database PrimeraDB;create=true
